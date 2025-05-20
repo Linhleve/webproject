@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAN Perfume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: #333;
+            background: #f5f3f0; /* Màu nền nhẹ làm fallback */
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+            linear-gradient(rgba(245, 243, 240, 0.1), rgba(245, 243, 240, 0.1)), 
+            url('https://lanperfume.com/wp-content/uploads/2025/03/IMG_2144.jpg') center/cover no-repeat;
+        z-index: -1;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid #eee;
+            backdrop-filter: blur(5px);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #a58b6e;
+        }
+        
+        .wishlist {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        
+        .language {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+            text-align: right;
+        }
+        
+        .main-content {
+            padding: 80px 50px;
+            text-align: center;
+        }
+        
+        .collection-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #555;
+        }
+        
+        .brand-name {
+            font-size: 48px;
+            margin-bottom: 40px;
+            letter-spacing: 5px;
+            color: #333;
+            font-weight: 300;
+        }
+        
+        .vision {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            letter-spacing: 2px;
+        }
+        
+        .vision-union {
+            font-size: 24px;
+            margin-bottom: 50px;
+            color: #777;
+            letter-spacing: 3px;
+        }
+        
+        .perfume-names {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .perfume-name {
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px 25px;
+            border: 1px solid #ddd;
+            transition: all 0.3s;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .perfume-name:hover {
+            background-color: #fff;
+            border-color: #a58b6e;
+            color: #a58b6e;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="#">Trang chủ</a>
+            <a href="#">Về LAN Perfume</a>
+            <a href="#">Bộ sưu tập nước hoa</a>
+            <a href="#">Thương hiệu</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Liên hệ</a>
+        </div>
+        <div>
+            <div class="wishlist">WISHLIST</div>
+            <div class="language">en edition</div>
+        </div>
+    </nav>
+    
+    <!-- <div class="main-content">
+        <div class="collection-title">Bộ sưu tập nước hoa</div>
+        <div class="brand-name">LAN Perfume</div>
+        <div class="vision">VISION - 2022</div>
+        <div class="vision-union">VISION/UNION</div>
+        
+        <div class="perfume-names">
+            <div class="perfume-name">JODESEY</div>
+            <div class="perfume-name">LINONI</div>
+            <div class="perfume-name">Gritter</div>
+            <div class="perfume-name">CORTIFRA</div>
+        </div> -->
+    </div>
+</body>
+</html>
