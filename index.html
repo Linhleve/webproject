@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAN Perfume</title>
+    <title>NLMM</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
     <style>
         * {
             margin: 0;
@@ -14,7 +18,7 @@
         
         body {
             color: #333;
-            background: #f5f3f0; /* Màu nền nhẹ làm fallback */
+            background: #f5f3f0; 
             position: relative;
             min-height: 100vh;
         }
@@ -27,7 +31,7 @@
         right: 0;
         bottom: 0;
         background:
-            linear-gradient(rgba(245, 243, 240, 0.1), rgba(245, 243, 240, 0.1)), 
+            linear-gradient(rgba(242, 241, 240, 0.1), rgba(245, 243, 240, 0.1)), 
             url('https://lanperfume.com/wp-content/uploads/2025/03/IMG_2144.jpg') center/cover no-repeat;
         z-index: -1;
         }
@@ -59,10 +63,10 @@
             color: #a58b6e;
         }
         
-        .wishlist {
+        .shopping_cart {
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 24px;
             letter-spacing: 1px;
         }
         
@@ -72,48 +76,14 @@
             margin-top: 5px;
             text-align: right;
         }
-        
-        .main-content {
-            padding: 80px 50px;
-            text-align: center;
-        }
-        
-        .collection-title {
-            font-size: 24px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #555;
-        }
-        
-        .brand-name {
-            font-size: 48px;
-            margin-bottom: 40px;
-            letter-spacing: 5px;
-            color: #333;
-            font-weight: 300;
-        }
-        
-        .vision {
-            font-size: 72px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #333;
-            letter-spacing: 2px;
-        }
-        
-        .vision-union {
-            font-size: 24px;
-            margin-bottom: 50px;
-            color: #777;
-            letter-spacing: 3px;
-        }
-        
+           
         .perfume-names {
             display: flex;
             justify-content: center;
+            align-content: flex-end;
             gap: 50px;
             flex-wrap: wrap;
+            height: 800px;
         }
         
         .perfume-name {
@@ -133,37 +103,32 @@
             color: #a58b6e;
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+        } 
     </style>
 </head>
 <body>
     <nav>
         <div class="nav-links">
             <a href="#">Trang chủ</a>
-            <a href="#">Về LAN Perfume</a>
+            <a href="#">Về NLMM</a>
             <a href="#">Bộ sưu tập nước hoa</a>
             <a href="#">Thương hiệu</a>
             <a href="#">Tin tức</a>
             <a href="#">Liên hệ</a>
         </div>
         <div>
-            <div class="wishlist">WISHLIST</div>
-            <div class="language">en edition</div>
+            <div class="shopping_cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="language">Vietnamese</div>
         </div>
     </nav>
-    
-    <!-- <div class="main-content">
-        <div class="collection-title">Bộ sưu tập nước hoa</div>
-        <div class="brand-name">LAN Perfume</div>
-        <div class="vision">VISION - 2022</div>
-        <div class="vision-union">VISION/UNION</div>
-        
-        <div class="perfume-names">
-            <div class="perfume-name">JODESEY</div>
-            <div class="perfume-name">LINONI</div>
-            <div class="perfume-name">Gritter</div>
-            <div class="perfume-name">CORTIFRA</div>
-        </div> -->
+
+    <div class="perfume-names">
+        <div class="perfume-name">Chanel</div>
+        <div class="perfume-name">Dior</div>
+        <div class="perfume-name">Versace</div>
+        <div class="perfume-name">YSL</div>
     </div>
 </body>
 </html>
